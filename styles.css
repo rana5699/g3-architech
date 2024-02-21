@@ -1,0 +1,330 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 20px;
+}
+/* mobile first design START here*/
+
+.devices {
+  display: flex;
+  margin: 0% 20px;
+  justify-content: space-between;
+}
+#navbar {
+  display: none;
+  margin: 0% 20px;
+  list-style: none;
+  text-align: right;
+}
+nav ul li {
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 5px;
+}
+nav ul li:hover {
+  text-decoration: underline;
+  background-color: aquamarine;
+  text-align: center;
+  border-radius: 50px;
+  color: rgb(5, 97, 97);
+  cursor: pointer;
+}
+.nav-logo {
+  color: rgb(19, 19, 19);
+  font-family: Work Sans;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.banner-content {
+  text-align: center;
+  margin: 5% auto;
+  padding: 10px;
+}
+.banner-photo {
+  display: block;
+  text-align: center;
+}
+.banner-title {
+  color: rgb(19, 19, 19);
+  font-family: Work Sans;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.banner-info {
+  color: rgb(114, 114, 114);
+  padding: 5px;
+  line-height: 25px;
+}
+.btn {
+  font-weight: 700;
+  margin: 15px 10px 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  color: aliceblue;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  width: 180px;
+  height: 54px;
+  background: rgb(255, 144, 14);
+}
+.btn:hover {
+  background: rgb(160, 87, 3);
+}
+
+/* team section */
+.team-container {
+  background: rgb(245, 241, 237);
+  border-radius: 10px;
+}
+.team-content {
+  text-align: center;
+  line-height: 25px;
+  padding: 10px;
+}
+.team-title {
+  font-family: Work Sans;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 10px 0px;
+}
+.team-images {
+  margin: 0% auto;
+  text-align: center;
+}
+.team-images img {
+  width: 90%;
+  height: 350px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* team section */
+
+/* features-container" */
+.features-container {
+  padding: 15px;
+  margin: 20px auto;
+}
+.features-content {
+  padding: 15px;
+  line-height: 30px;
+}
+.features-title {
+  border-left: 5px solid rgb(255, 144, 14);
+  font-size: 30px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.features-desc {
+  border-radius: 8px;
+  margin: 10px 0px;
+  padding: 5px;
+  background: linear-gradient(to right, rgb(228, 210, 210), rgb(247, 244, 244));
+}
+.features-desc:hover {
+  box-shadow: 4px 5px 10px 5px rgb(204, 198, 198);
+  background: rgb(233, 183, 183);
+  cursor: pointer;
+}
+.features-image {
+  text-align: center;
+}
+.features-image img {
+  width: 90%;
+  height: 300px;
+}
+.poisition {
+  height: 350px;
+  position: relative;
+}
+.experience {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  border-radius: 8px;
+  text-align: center;
+
+  background: rgb(255, 144, 14);
+}
+/* features-container" */
+
+/* mobile first design END here*/
+
+/* styles for medium devices START here */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container {
+    max-width: 85%;
+    margin: 20px auto;
+  }
+  .hide {
+    display: none;
+  }
+  .nav-logo {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0% auto;
+    cursor: pointer;
+    animation: colorChange 3s infinite alternate; /* Adjust animation duration and iteration count as needed */
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: rgb(19, 19, 19); /* Start color */
+    }
+    50% {
+      color: rgb(255, 0, 0); /* Middle color */
+    }
+    100% {
+      color: rgb(47, 8, 153); /* End color (same as start for seamless loop) */
+    }
+  }
+
+  #navbar {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav ul li {
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  /* team section  */
+  .team-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+  .team-images img {
+    width: 40%;
+    height: 250px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  /* team section  */
+
+  /* features section START here  */
+  .features-image img {
+    height: 450px;
+  }
+  .desc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .experience {
+    position: absolute;
+    top: 0%;
+    background: rgb(255, 144, 14);
+  }
+  /* features section END here  */
+}
+/* styles for medium devices END here */
+
+/* styles for lerger devices START here */
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 85%;
+    margin: 20px auto;
+  }
+  .hide {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #navbar {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+  }
+  .nav-logo {
+    font-size: 40px;
+  }
+  nav ul li {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .banner {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* team section  */
+  .team-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .team-images {
+    width: 200%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .team-images img {
+    width: 45%;
+    height: 50%;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  /* team section  */
+  /* features-container */
+  .features-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .poisition {
+    width: 45%;
+    margin-top: 10%;
+  }
+  .features-content {
+    width: 50%;
+  }
+  .features-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .features-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .experience {
+    position: absolute;
+    top: 0%;
+    background: rgb(255, 144, 14);
+  }
+  /* features-container */
+}
+
+/* styles for lerger devices END here */
