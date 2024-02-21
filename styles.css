@@ -150,6 +150,7 @@ nav ul li:hover {
 .experience {
   position: absolute;
   bottom: 0%;
+  left: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,6 +236,7 @@ nav ul li:hover {
   .experience {
     position: absolute;
     top: 0%;
+    left: 0%;
     background: rgb(255, 144, 14);
   }
   /* features section END here  */
@@ -322,6 +324,7 @@ nav ul li:hover {
   .experience {
     position: absolute;
     top: 0%;
+    left: 0%;
     background: rgb(255, 144, 14);
   }
   /* features-container */
